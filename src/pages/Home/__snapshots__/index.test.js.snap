@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Home snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="header"
+  >
+    <h1>
+      Welcome to Nova Joke APP
+    </h1>
+  </header>
+  <footer>
+    © 2021 Marlon Veiga
+    <a
+      href="https://github.com/marlonveiga-santos"
+    >
+      <h3>
+        See more in Github
+      </h3>
+    </a>
+  </footer>
+</DocumentFragment>
+`;
