@@ -1,0 +1,70 @@
+.punchline-card {
+  width: 50%;
+  margin: 5% 1%;
+  width: fit-content;
+  padding: 2%;
+  border: var(--border);
+  border-radius: 25%;
+  background-color: #19ba04;
+  background-image: url("../../assets/punchline-card.svg");
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.punchline-card dd {
+  margin-top: 1rem;
+  font-size: 2rem;
+  align-items: baseline;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.punchline-card-img {
+  width: 30%;
+  transform: scale(1);
+  animation: pulse 1s infinite;
+}
+
+.punchline-fade {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.75);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+@media only screen and (min-width: 361px) {
+  .punchline-card {
+    width: 50%;
+    margin: 5% auto;
+  }
+}

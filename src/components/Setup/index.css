@@ -1,0 +1,86 @@
+.setup-card {
+  width: 50%;
+  max-height: 5%;
+  width: fit-content;
+  margin: 1%;
+  padding: 1rem 2rem;
+  border: var(--border);
+  border-radius: 25%;
+  background-color: #bf3a15;
+  background-image: url("../../assets/setup-card.svg");
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.setup-card-item {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.setup-card-item:nth-child(3) {
+  flex-direction: column;
+}
+
+.setup-card-item:nth-child(3) dd {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.setup-card-img {
+  width: 30%;
+  transform: rotate(0deg);
+  animation: zigzag 4s linear infinite;
+}
+
+.setup-fade {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zigzag {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  75% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 361px) {
+  .setup-card {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

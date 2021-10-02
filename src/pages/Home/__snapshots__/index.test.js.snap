@@ -9,6 +9,14 @@ exports[`Renders Home snapshot 1`] = `
       Welcome to Nova Joke APP
     </h1>
   </header>
+  <div
+    class="loading"
+  >
+    Loading...
+    <p>
+      If persists check your network or refresh the page
+    </p>
+  </div>
   <footer>
     © 2021 Marlon Veiga
     <a

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <defs>
+    <linearGradient
+      id="a"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="1"
+      gradientTransform="rotate(309,0.5,0.5)"
+    >
+      <stop offset="0" stop-color="#1a8005" />
+      <stop offset="1" stop-color="#5f5cff" />
+    </linearGradient>
+  </defs>
+  <pattern id="b" width="23" height="23" patternUnits="userSpaceOnUse">
+    <circle fill="#ffffff" cx="11.5" cy="11.5" r="11.5" />
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#a)" />
+  <rect width="100%" height="100%" fill="url(#b)" fill-opacity="0.11" />
+</svg>
