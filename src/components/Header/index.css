@@ -1,0 +1,21 @@
+.header {
+    font-size: .8rem;
+    display: flex;
+    padding: 0 1%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header h1{
+    display: inline-block;
+}
+
+.header h2{
+    display: none;
+}
+
+@media only screen and (min-width: 361px) {
+    .header h2{
+        display: inline-block;
+    }
+  }

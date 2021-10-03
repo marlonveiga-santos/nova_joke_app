@@ -2,6 +2,7 @@ import {useEffect, useRef, useState} from "react";
 import Setup from "../Setup";
 import Punchline from "../Punchline";
 import Loading from "../Loading";
+import "./index.css";
 
 /* Note como este componente é o único que possui um estado e também o único que possui hooks.
   Esta construção poderia ainda ser delegada ao context ou Redux, mas um estado centralizado 

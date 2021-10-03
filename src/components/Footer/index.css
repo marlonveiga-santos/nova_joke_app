@@ -1,0 +1,31 @@
+footer {
+    margin-top: 35vh;
+    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: .4rem;
+  }
+  
+  footer h3 {
+    display: inline-block;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer a {
+    color: var(--color-primary);
+  }
+  
+  footer a:visited {
+    color: var(--color-primary);
+  }
+  
+  @media only screen and (min-width: 361px) {
+    footer {
+      flex-direction: row;
+    }
+  }
